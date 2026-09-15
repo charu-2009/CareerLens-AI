@@ -1,0 +1,121 @@
+{
+  "Data Analyst": {
+    "core_skills": ["SQL", "Python", "Statistics", "Excel", "Data Visualization"],
+    "tools_technologies": ["Power BI", "Tableau", "Pandas", "NumPy"],
+    "advanced_skills": ["Predictive Analytics", "Machine Learning"]
+  },
+
+  "Data Scientist": {
+    "core_skills": ["Python", "SQL", "Statistics", "Mathematics", "Machine Learning"],
+    "tools_technologies": ["Pandas", "NumPy", "Scikit-learn", "Jupyter"],
+    "advanced_skills": ["Deep Learning", "TensorFlow", "PyTorch", "NLP"]
+  },
+
+  "Data Engineer": {
+    "core_skills": ["SQL", "Python", "Data Modeling", "ETL", "Data Warehousing"],
+    "tools_technologies": ["Apache Spark", "Hadoop", "Airflow", "Docker"],
+    "advanced_skills": ["Kafka", "Kubernetes", "Cloud Computing"]
+  },
+
+  "Machine Learning Engineer": {
+    "core_skills": ["Python", "Machine Learning", "Statistics", "Mathematics", "Algorithms"],
+    "tools_technologies": ["Scikit-learn", "TensorFlow", "PyTorch", "Git"],
+    "advanced_skills": ["MLOps", "Docker", "Kubernetes", "Model Deployment"]
+  },
+
+  "ML Ops Engineer": {
+    "core_skills": ["Python", "Machine Learning", "Software Engineering", "CI/CD", "Model Monitoring"],
+    "tools_technologies": ["Docker", "Kubernetes", "Git", "MLflow"],
+    "advanced_skills": ["Cloud Computing", "Infrastructure as Code", "Feature Stores"]
+  },
+
+  "AI Architect": {
+    "core_skills": ["Artificial Intelligence", "Machine Learning", "System Design", "Software Architecture", "Cloud Computing"],
+    "tools_technologies": ["Python", "Docker", "Kubernetes", "AWS", "Azure"],
+    "advanced_skills": ["MLOps", "Distributed Systems", "AI Governance", "Solution Architecture"]
+  },
+
+  "AI Consultant": {
+    "core_skills": ["Artificial Intelligence", "Machine Learning", "Business Analysis", "Problem Solving", "Data Analysis"],
+    "tools_technologies": ["Python", "SQL", "Power BI", "Tableau"],
+    "advanced_skills": ["AI Strategy", "AI Ethics", "Digital Transformation"]
+  },
+
+  "AI Product Manager": {
+    "core_skills": ["Product Management", "Artificial Intelligence", "Machine Learning", "Business Strategy", "Data Analysis"],
+    "tools_technologies": ["SQL", "Python", "Jira", "Analytics Tools"],
+    "advanced_skills": ["AI Strategy", "Experimentation", "Responsible AI", "Product Analytics"]
+  },
+
+  "AI Research Scientist": {
+    "core_skills": ["Machine Learning", "Deep Learning", "Mathematics", "Statistics", "Research Methodology"],
+    "tools_technologies": ["Python", "PyTorch", "TensorFlow", "Jupyter"],
+    "advanced_skills": ["Generative AI", "Reinforcement Learning", "Scientific Computing", "Research Publications"]
+  },
+
+  "AI Software Engineer": {
+    "core_skills": ["Python", "Software Engineering", "Algorithms", "Data Structures", "Machine Learning"],
+    "tools_technologies": ["Git", "Docker", "APIs", "TensorFlow"],
+    "advanced_skills": ["MLOps", "Cloud Computing", "Model Deployment", "Distributed Systems"]
+  },
+
+  "AI Specialist": {
+    "core_skills": ["Artificial Intelligence", "Machine Learning", "Python", "Data Analysis", "Problem Solving"],
+    "tools_technologies": ["Scikit-learn", "TensorFlow", "SQL", "Jupyter"],
+    "advanced_skills": ["Deep Learning", "NLP", "Computer Vision", "Generative AI"]
+  },
+
+  "Autonomous Systems Engineer": {
+    "core_skills": ["Robotics", "Machine Learning", "Control Systems", "Algorithms", "Computer Vision"],
+    "tools_technologies": ["Python", "C++", "ROS", "PyTorch"],
+    "advanced_skills": ["Reinforcement Learning", "Sensor Fusion", "Autonomous Navigation", "Edge AI"]
+  },
+
+  "Computer Vision Engineer": {
+    "core_skills": ["Computer Vision", "Deep Learning", "Machine Learning", "Python", "Image Processing"],
+    "tools_technologies": ["OpenCV", "PyTorch", "TensorFlow", "NumPy"],
+    "advanced_skills": ["Object Detection", "Image Segmentation", "Vision Transformers", "Multimodal AI"]
+  },
+
+  "Deep Learning Engineer": {
+    "core_skills": ["Deep Learning", "Machine Learning", "Python", "Mathematics", "Neural Networks"],
+    "tools_technologies": ["PyTorch", "TensorFlow", "Keras", "Jupyter"],
+    "advanced_skills": ["Generative AI", "Transformers", "Model Optimization", "Distributed Training"]
+  },
+
+  "Head of AI": {
+    "core_skills": ["Artificial Intelligence", "Machine Learning", "Leadership", "AI Strategy", "Business Strategy"],
+    "tools_technologies": ["Python", "Cloud Platforms", "Analytics Tools", "MLOps Platforms"],
+    "advanced_skills": ["AI Governance", "Responsible AI", "AI Transformation", "Technology Leadership"]
+  },
+
+  "Machine Learning Researcher": {
+    "core_skills": ["Machine Learning", "Deep Learning", "Mathematics", "Statistics", "Research Methodology"],
+    "tools_technologies": ["Python", "PyTorch", "TensorFlow", "Jupyter"],
+    "advanced_skills": ["Reinforcement Learning", "Generative AI", "Transformers", "Research Publications"]
+  },
+
+  "NLP Engineer": {
+    "core_skills": ["Natural Language Processing", "Machine Learning", "Deep Learning", "Python", "Linguistics"],
+    "tools_technologies": ["PyTorch", "TensorFlow", "Hugging Face", "spaCy"],
+    "advanced_skills": ["Transformers", "Large Language Models", "RAG", "Generative AI"]
+  },
+
+  "Principal Data Scientist": {
+    "core_skills": ["Python", "SQL", "Statistics", "Machine Learning", "Data Science"],
+    "tools_technologies": ["Scikit-learn", "Pandas", "PyTorch", "SQL"],
+    "advanced_skills": ["Deep Learning", "MLOps", "Leadership", "AI Strategy"]
+  },
+
+  "Research Scientist": {
+    "core_skills": ["Research Methodology", "Statistics", "Mathematics", "Machine Learning", "Experimental Design"],
+    "tools_technologies": ["Python", "R", "Jupyter", "Scientific Computing"],
+    "advanced_skills": ["Deep Learning", "Research Publications", "Causal Analysis", "Advanced Modeling"]
+  },
+
+  "Robotics Engineer": {
+    "core_skills": ["Robotics", "Programming", "Control Systems", "Algorithms", "Machine Learning"],
+    "tools_technologies": ["Python", "C++", "ROS", "Computer Vision"],
+    "advanced_skills": ["Autonomous Navigation", "Reinforcement Learning", "Sensor Fusion", "Embedded Systems"]
+  }
+}

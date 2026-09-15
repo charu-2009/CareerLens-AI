@@ -1,0 +1,34 @@
+{
+  "artifact": "career_profiles_v2.json",
+  "schema_version": "2.0",
+  "status": "frozen",
+  "generated_utc": "2026-09-10T15:09:35.176172+00:00",
+  "sha256": "f3b86f7ee64bf96cc9bae7f6e72502a79268c54d184f319e4995a75c363eef48",
+  "career_count": 201,
+  "readiness_enabled_careers": 84,
+  "routing_only_careers": 107,
+  "safe_shell_careers": 10,
+  "requirements": {
+    "core": 271,
+    "important": 491,
+    "total_readiness": 762,
+    "supporting": 2759,
+    "functional": 1386,
+    "context": 40559
+  },
+  "readiness_modes": {
+    "full_readiness_candidate": 58,
+    "limited_readiness_candidate": 26,
+    "routing_only_evidence": 107,
+    "safe_shell_no_evidence": 10
+  },
+  "source_candidate": "career_profiles_v2_pre_freeze_candidate.json",
+  "validation_source": "career_profiles_v2_json_integrity_validation.csv",
+  "v1_artifact": "role_skill_profiles.json",
+  "v1_artifact_unchanged": true,
+  "freeze_invariants": {
+    "profile_content_identical_to_validated_candidate": true,
+    "checksum_verified": true,
+    "v1_artifact_unchanged": true
+  }
+}

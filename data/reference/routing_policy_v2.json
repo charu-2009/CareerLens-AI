@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "policy_name": "CareerLens V2 Domain Routing Policy",
+  "policy_status": "frozen",
+  "confidence_states": {
+    "no_evidence": {
+      "matched_skill_count": 0,
+      "career_generation_allowed": false
+    },
+    "tentative": {
+      "matched_skill_count": 1,
+      "career_generation_allowed": false
+    },
+    "supported": {
+      "matched_skill_count": 2,
+      "career_generation_allowed": true
+    },
+    "strong": {
+      "matched_skill_count": "3+",
+      "career_generation_allowed": true
+    }
+  },
+  "retention_policy": {
+    "strong_domain_rule": "If one or more strong domains exist, retain all strong domains.",
+    "supported_only_rule": "If no strong domains exist but supported domains exist, retain only supported domains with the highest routing score.",
+    "supported_exact_tie_rule": "If multiple supported domains share the exact highest routing score, retain all tied top domains.",
+    "tentative_rule": "Tentative domains may be returned as routing evidence but cannot generate career candidates.",
+    "no_evidence_rule": "If no supported or strong domain exists, generate no career candidates."
+  },
+  "routing_score_semantics": "Weighted domain compatibility evidence derived from the domain skill map. It is not a probability, readiness score, or final career recommendation score.",
+  "candidate_generation_semantics": "Candidate careers are generated from retained domains using career taxonomy primary and secondary domain membership. Candidate generation is routing only and does not rank careers.",
+  "tie_semantics": "Exact supported-domain evidence ties are preserved rather than broken arbitrarily.",
+  "separation_of_concerns": {
+    "domain_routing": true,
+    "readiness_scoring": false,
+    "career_ranking": false,
+    "market_scoring": false,
+    "growth_scoring": false
+  },
+  "calibration_lineage": [
+    "11H.1",
+    "11H.2",
+    "11H.3",
+    "11H.4",
+    "11H.4A",
+    "11H.4B"
+  ]
+}

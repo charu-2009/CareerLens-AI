@@ -1,0 +1,33 @@
+{
+  "schema_version": "2.0",
+  "artifact_name": "CareerLens V2 Runtime Skill Alias Registry",
+  "source": "domain_skill_map.json",
+  "policy": "Only explicit aliases from the validated domain skill map are allowed for automatic runtime skill equivalence.",
+  "alias_count": 24,
+  "aliases": {
+    "ai": "artificial intelligence",
+    "amazon web services": "aws",
+    "c sharp": "c#",
+    "cpp": "c++",
+    "dotnet": ".net",
+    "google cloud platform": "gcp",
+    "js": "javascript",
+    "k8s": "kubernetes",
+    "microsoft azure": "azure",
+    "microsoft excel": "excel",
+    "ml": "machine learning",
+    "ms excel": "excel",
+    "nlp": "natural language processing",
+    "nodejs": "node.js",
+    "powerbi": "power bi",
+    "react.js": "react",
+    "reactjs": "react",
+    "scikit learn": "scikit-learn",
+    "search engine marketing": "sem",
+    "search engine optimization": "seo",
+    "sklearn": "scikit-learn",
+    "ts": "typescript",
+    "user experience": "ux design",
+    "user interface": "ui design"
+  }
+}

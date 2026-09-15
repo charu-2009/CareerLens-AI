@@ -1,0 +1,2057 @@
+{
+  "schema_version": "2.0.0",
+  "taxonomy_name": "CareerLens V2 Master Career Taxonomy",
+  "description": "Canonical career identity and domain taxonomy. Skill weights and market metrics are intentionally excluded at this stage.",
+  "design_notes": {
+    "canonicalization": "One canonical career name per role; aliases are matching aids only.",
+    "domains": "One primary domain plus optional secondary domains.",
+    "career_level": "Seniority is modeled separately rather than duplicated as separate careers.",
+    "external_mapping": "Verified ESCO/O*NET identifiers can be attached in a later enrichment step."
+  },
+  "domains": [
+    {
+      "domain_id": "dom_01",
+      "domain_name": "Data & Analytics"
+    },
+    {
+      "domain_id": "dom_02",
+      "domain_name": "AI & Machine Learning"
+    },
+    {
+      "domain_id": "dom_03",
+      "domain_name": "Software Development"
+    },
+    {
+      "domain_id": "dom_04",
+      "domain_name": "Web Development"
+    },
+    {
+      "domain_id": "dom_05",
+      "domain_name": "Mobile Development"
+    },
+    {
+      "domain_id": "dom_06",
+      "domain_name": "Cloud Computing"
+    },
+    {
+      "domain_id": "dom_07",
+      "domain_name": "DevOps & Platform Engineering"
+    },
+    {
+      "domain_id": "dom_08",
+      "domain_name": "Cybersecurity"
+    },
+    {
+      "domain_id": "dom_09",
+      "domain_name": "Networking & IT Infrastructure"
+    },
+    {
+      "domain_id": "dom_10",
+      "domain_name": "Database & Data Engineering"
+    },
+    {
+      "domain_id": "dom_11",
+      "domain_name": "UI/UX & Product Design"
+    },
+    {
+      "domain_id": "dom_12",
+      "domain_name": "Product & Project Management"
+    },
+    {
+      "domain_id": "dom_13",
+      "domain_name": "Business & Consulting"
+    },
+    {
+      "domain_id": "dom_14",
+      "domain_name": "Finance & Accounting"
+    },
+    {
+      "domain_id": "dom_15",
+      "domain_name": "Banking & FinTech"
+    },
+    {
+      "domain_id": "dom_16",
+      "domain_name": "Marketing & Advertising"
+    },
+    {
+      "domain_id": "dom_17",
+      "domain_name": "Sales & Customer Success"
+    },
+    {
+      "domain_id": "dom_18",
+      "domain_name": "Human Resources"
+    },
+    {
+      "domain_id": "dom_19",
+      "domain_name": "Operations & Supply Chain"
+    },
+    {
+      "domain_id": "dom_20",
+      "domain_name": "Engineering"
+    },
+    {
+      "domain_id": "dom_21",
+      "domain_name": "Healthcare & Life Sciences"
+    },
+    {
+      "domain_id": "dom_22",
+      "domain_name": "Research & Academia"
+    },
+    {
+      "domain_id": "dom_23",
+      "domain_name": "Media, Content & Communication"
+    },
+    {
+      "domain_id": "dom_24",
+      "domain_name": "Education & Training"
+    }
+  ],
+  "careers": [
+    {
+      "career_id": "cl_data_analyst",
+      "career_name": "Data Analyst",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_business_intelligence_analyst",
+      "career_name": "Business Intelligence Analyst",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [],
+      "aliases": [
+        "BI Analyst"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_business_intelligence_developer",
+      "career_name": "Business Intelligence Developer",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [],
+      "aliases": [
+        "BI Developer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_analytics_engineer",
+      "career_name": "Analytics Engineer",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [
+        "Database & Data Engineering"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_data_visualization_specialist",
+      "career_name": "Data Visualization Specialist",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_reporting_analyst",
+      "career_name": "Reporting Analyst",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_product_analyst",
+      "career_name": "Product Analyst",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [
+        "Product & Project Management"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_customer_insights_analyst",
+      "career_name": "Customer Insights Analyst",
+      "primary_domain": "Data & Analytics",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_data_scientist",
+      "career_name": "Data Scientist",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [
+        "Data & Analytics"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_machine_learning_engineer",
+      "career_name": "Machine Learning Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [
+        "ML Engineer"
+      ],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ai_engineer",
+      "career_name": "AI Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [
+        "Artificial Intelligence Engineer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ai_research_scientist",
+      "career_name": "AI Research Scientist",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ai_specialist",
+      "career_name": "AI Specialist",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ai_consultant",
+      "career_name": "AI Consultant",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_nlp_engineer",
+      "career_name": "NLP Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [
+        "Natural Language Processing Engineer"
+      ],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_computer_vision_engineer",
+      "career_name": "Computer Vision Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [
+        "CV Engineer"
+      ],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_deep_learning_engineer",
+      "career_name": "Deep Learning Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_machine_learning_researcher",
+      "career_name": "Machine Learning Researcher",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [
+        "ML Researcher"
+      ],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_robotics_engineer",
+      "career_name": "Robotics Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [
+        "Engineering"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_autonomous_systems_engineer",
+      "career_name": "Autonomous Systems Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [
+        "Engineering",
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ml_ops_engineer",
+      "career_name": "ML Ops Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [
+        "DevOps & Platform Engineering"
+      ],
+      "aliases": [
+        "MLOps Engineer",
+        "Machine Learning Operations Engineer"
+      ],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ai_architect",
+      "career_name": "AI Architect",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_principal_data_scientist",
+      "career_name": "Principal Data Scientist",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_head_of_ai",
+      "career_name": "Head of AI",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ai_software_engineer",
+      "career_name": "AI Software Engineer",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ai_product_manager",
+      "career_name": "AI Product Manager",
+      "primary_domain": "AI & Machine Learning",
+      "secondary_domains": [
+        "Product & Project Management"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_software_engineer",
+      "career_name": "Software Engineer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_software_developer",
+      "career_name": "Software Developer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_java_developer",
+      "career_name": "Java Developer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [
+        "Java Software Developer",
+        "Java Engineer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_python_developer",
+      "career_name": "Python Developer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [
+        "Python Software Developer",
+        "Python Engineer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cpp_developer",
+      "career_name": "C++ Developer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_dotnet_developer",
+      "career_name": ".NET Developer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [
+        "Dotnet Developer",
+        "C# .NET Developer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_application_developer",
+      "career_name": "Application Developer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_systems_software_developer",
+      "career_name": "Systems Software Developer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_embedded_software_engineer",
+      "career_name": "Embedded Software Engineer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_qa_engineer",
+      "career_name": "QA Engineer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_software_test_engineer",
+      "career_name": "Software Test Engineer",
+      "primary_domain": "Software Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_frontend_developer",
+      "career_name": "Frontend Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [
+        "Front-End Developer",
+        "Frontend Engineer",
+        "Front-End Engineer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_backend_developer",
+      "career_name": "Backend Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [
+        "Back-End Developer",
+        "Backend Engineer",
+        "Back-End Engineer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_full_stack_developer",
+      "career_name": "Full-Stack Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [
+        "Full Stack Developer",
+        "Full-Stack Engineer",
+        "Full Stack Engineer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_web_developer",
+      "career_name": "Web Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_react_developer",
+      "career_name": "React Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_angular_developer",
+      "career_name": "Angular Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_node_js_developer",
+      "career_name": "Node.js Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_php_developer",
+      "career_name": "PHP Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_wordpress_developer",
+      "career_name": "WordPress Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ui_developer",
+      "career_name": "UI Developer",
+      "primary_domain": "Web Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_android_developer",
+      "career_name": "Android Developer",
+      "primary_domain": "Mobile Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ios_developer",
+      "career_name": "iOS Developer",
+      "primary_domain": "Mobile Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_mobile_application_developer",
+      "career_name": "Mobile Application Developer",
+      "primary_domain": "Mobile Development",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [
+        "Mobile App Developer",
+        "Mobile Developer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_flutter_developer",
+      "career_name": "Flutter Developer",
+      "primary_domain": "Mobile Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_react_native_developer",
+      "career_name": "React Native Developer",
+      "primary_domain": "Mobile Development",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cloud_engineer",
+      "career_name": "Cloud Engineer",
+      "primary_domain": "Cloud Computing",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cloud_architect",
+      "career_name": "Cloud Architect",
+      "primary_domain": "Cloud Computing",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cloud_administrator",
+      "career_name": "Cloud Administrator",
+      "primary_domain": "Cloud Computing",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cloud_consultant",
+      "career_name": "Cloud Consultant",
+      "primary_domain": "Cloud Computing",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cloud_security_engineer",
+      "career_name": "Cloud Security Engineer",
+      "primary_domain": "Cloud Computing",
+      "secondary_domains": [
+        "Cybersecurity"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cloud_support_engineer",
+      "career_name": "Cloud Support Engineer",
+      "primary_domain": "Cloud Computing",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_devops_engineer",
+      "career_name": "DevOps Engineer",
+      "primary_domain": "DevOps & Platform Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_site_reliability_engineer",
+      "career_name": "Site Reliability Engineer",
+      "primary_domain": "DevOps & Platform Engineering",
+      "secondary_domains": [],
+      "aliases": [
+        "SRE"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_platform_engineer",
+      "career_name": "Platform Engineer",
+      "primary_domain": "DevOps & Platform Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_build_and_release_engineer",
+      "career_name": "Build and Release Engineer",
+      "primary_domain": "DevOps & Platform Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_infrastructure_automation_engineer",
+      "career_name": "Infrastructure Automation Engineer",
+      "primary_domain": "DevOps & Platform Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_devsecops_engineer",
+      "career_name": "DevSecOps Engineer",
+      "primary_domain": "DevOps & Platform Engineering",
+      "secondary_domains": [
+        "Cybersecurity",
+        "Cloud Computing"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_cybersecurity_analyst",
+      "career_name": "Cybersecurity Analyst",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [
+        "Cyber Security Analyst"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_information_security_analyst",
+      "career_name": "Information Security Analyst",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_soc_analyst",
+      "career_name": "SOC Analyst",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [
+        "Security Operations Center Analyst"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_security_engineer",
+      "career_name": "Security Engineer",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_penetration_tester",
+      "career_name": "Penetration Tester",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [
+        "Pen Tester",
+        "Pentester"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ethical_hacker",
+      "career_name": "Ethical Hacker",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_security_consultant",
+      "career_name": "Security Consultant",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_incident_response_analyst",
+      "career_name": "Incident Response Analyst",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_digital_forensics_analyst",
+      "career_name": "Digital Forensics Analyst",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_security_architect",
+      "career_name": "Security Architect",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_grc_analyst",
+      "career_name": "GRC Analyst",
+      "primary_domain": "Cybersecurity",
+      "secondary_domains": [],
+      "aliases": [
+        "Governance Risk and Compliance Analyst"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_network_engineer",
+      "career_name": "Network Engineer",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_network_administrator",
+      "career_name": "Network Administrator",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_systems_administrator",
+      "career_name": "Systems Administrator",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [],
+      "aliases": [
+        "System Administrator",
+        "Sysadmin"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_it_support_specialist",
+      "career_name": "IT Support Specialist",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_it_technician",
+      "career_name": "IT Technician",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_infrastructure_engineer",
+      "career_name": "Infrastructure Engineer",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [
+        "DevOps & Platform Engineering"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_network_architect",
+      "career_name": "Network Architect",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_systems_engineer",
+      "career_name": "Systems Engineer",
+      "primary_domain": "Networking & IT Infrastructure",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_data_engineer",
+      "career_name": "Data Engineer",
+      "primary_domain": "Database & Data Engineering",
+      "secondary_domains": [
+        "Data & Analytics"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_database_administrator",
+      "career_name": "Database Administrator",
+      "primary_domain": "Database & Data Engineering",
+      "secondary_domains": [],
+      "aliases": [
+        "DBA"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_database_developer",
+      "career_name": "Database Developer",
+      "primary_domain": "Database & Data Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_etl_developer",
+      "career_name": "ETL Developer",
+      "primary_domain": "Database & Data Engineering",
+      "secondary_domains": [],
+      "aliases": [
+        "ETL Engineer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_data_architect",
+      "career_name": "Data Architect",
+      "primary_domain": "Database & Data Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_big_data_engineer",
+      "career_name": "Big Data Engineer",
+      "primary_domain": "Database & Data Engineering",
+      "secondary_domains": [
+        "Data & Analytics"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_data_warehouse_developer",
+      "career_name": "Data Warehouse Developer",
+      "primary_domain": "Database & Data Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ui_designer",
+      "career_name": "UI Designer",
+      "primary_domain": "UI/UX & Product Design",
+      "secondary_domains": [],
+      "aliases": [
+        "User Interface Designer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ux_designer",
+      "career_name": "UX Designer",
+      "primary_domain": "UI/UX & Product Design",
+      "secondary_domains": [],
+      "aliases": [
+        "User Experience Designer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ui_ux_designer",
+      "career_name": "UI/UX Designer",
+      "primary_domain": "UI/UX & Product Design",
+      "secondary_domains": [],
+      "aliases": [
+        "UX/UI Designer"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_product_designer",
+      "career_name": "Product Designer",
+      "primary_domain": "UI/UX & Product Design",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_ux_researcher",
+      "career_name": "UX Researcher",
+      "primary_domain": "UI/UX & Product Design",
+      "secondary_domains": [],
+      "aliases": [
+        "User Experience Researcher"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_interaction_designer",
+      "career_name": "Interaction Designer",
+      "primary_domain": "UI/UX & Product Design",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_visual_designer",
+      "career_name": "Visual Designer",
+      "primary_domain": "UI/UX & Product Design",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_product_manager",
+      "career_name": "Product Manager",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_technical_product_manager",
+      "career_name": "Technical Product Manager",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_project_manager",
+      "career_name": "Project Manager",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_it_project_manager",
+      "career_name": "IT Project Manager",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_program_manager",
+      "career_name": "Program Manager",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_scrum_master",
+      "career_name": "Scrum Master",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_product_owner",
+      "career_name": "Product Owner",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_project_coordinator",
+      "career_name": "Project Coordinator",
+      "primary_domain": "Product & Project Management",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_business_analyst",
+      "career_name": "Business Analyst",
+      "primary_domain": "Business & Consulting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_it_business_analyst",
+      "career_name": "IT Business Analyst",
+      "primary_domain": "Business & Consulting",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_management_consultant",
+      "career_name": "Management Consultant",
+      "primary_domain": "Business & Consulting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_technology_consultant",
+      "career_name": "Technology Consultant",
+      "primary_domain": "Business & Consulting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_strategy_analyst",
+      "career_name": "Strategy Analyst",
+      "primary_domain": "Business & Consulting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_business_consultant",
+      "career_name": "Business Consultant",
+      "primary_domain": "Business & Consulting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_process_analyst",
+      "career_name": "Process Analyst",
+      "primary_domain": "Business & Consulting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_accountant",
+      "career_name": "Accountant",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_financial_analyst",
+      "career_name": "Financial Analyst",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_financial_controller",
+      "career_name": "Financial Controller",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_auditor",
+      "career_name": "Auditor",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_tax_consultant",
+      "career_name": "Tax Consultant",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_risk_analyst",
+      "career_name": "Risk Analyst",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_treasury_analyst",
+      "career_name": "Treasury Analyst",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_investment_analyst",
+      "career_name": "Investment Analyst",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_management_accountant",
+      "career_name": "Management Accountant",
+      "primary_domain": "Finance & Accounting",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_credit_analyst",
+      "career_name": "Credit Analyst",
+      "primary_domain": "Banking & FinTech",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_banking_analyst",
+      "career_name": "Banking Analyst",
+      "primary_domain": "Banking & FinTech",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_investment_banking_analyst",
+      "career_name": "Investment Banking Analyst",
+      "primary_domain": "Banking & FinTech",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_fintech_analyst",
+      "career_name": "FinTech Analyst",
+      "primary_domain": "Banking & FinTech",
+      "secondary_domains": [
+        "Finance & Accounting"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_financial_technology_consultant",
+      "career_name": "Financial Technology Consultant",
+      "primary_domain": "Banking & FinTech",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_fraud_analyst",
+      "career_name": "Fraud Analyst",
+      "primary_domain": "Banking & FinTech",
+      "secondary_domains": [
+        "Cybersecurity"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_compliance_analyst",
+      "career_name": "Compliance Analyst",
+      "primary_domain": "Banking & FinTech",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_digital_marketing_specialist",
+      "career_name": "Digital Marketing Specialist",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_seo_specialist",
+      "career_name": "SEO Specialist",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [
+        "Search Engine Optimization Specialist"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_sem_specialist",
+      "career_name": "SEM Specialist",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [
+        "Search Engine Marketing Specialist"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_social_media_manager",
+      "career_name": "Social Media Manager",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_marketing_analyst",
+      "career_name": "Marketing Analyst",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [
+        "Data & Analytics"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_content_marketing_specialist",
+      "career_name": "Content Marketing Specialist",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_brand_manager",
+      "career_name": "Brand Manager",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_performance_marketing_specialist",
+      "career_name": "Performance Marketing Specialist",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_email_marketing_specialist",
+      "career_name": "Email Marketing Specialist",
+      "primary_domain": "Marketing & Advertising",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_sales_executive",
+      "career_name": "Sales Executive",
+      "primary_domain": "Sales & Customer Success",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_business_development_executive",
+      "career_name": "Business Development Executive",
+      "primary_domain": "Sales & Customer Success",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_business_development_manager",
+      "career_name": "Business Development Manager",
+      "primary_domain": "Sales & Customer Success",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_account_manager",
+      "career_name": "Account Manager",
+      "primary_domain": "Sales & Customer Success",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_customer_success_manager",
+      "career_name": "Customer Success Manager",
+      "primary_domain": "Sales & Customer Success",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_sales_analyst",
+      "career_name": "Sales Analyst",
+      "primary_domain": "Sales & Customer Success",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_pre_sales_consultant",
+      "career_name": "Pre-Sales Consultant",
+      "primary_domain": "Sales & Customer Success",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_hr_specialist",
+      "career_name": "HR Specialist",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_hr_analyst",
+      "career_name": "HR Analyst",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [
+        "Human Resources Analyst"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_recruiter",
+      "career_name": "Recruiter",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_technical_recruiter",
+      "career_name": "Technical Recruiter",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_talent_acquisition_specialist",
+      "career_name": "Talent Acquisition Specialist",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_hr_business_partner",
+      "career_name": "HR Business Partner",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_learning_and_development_specialist",
+      "career_name": "Learning and Development Specialist",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [
+        "L&D Specialist"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_compensation_and_benefits_analyst",
+      "career_name": "Compensation and Benefits Analyst",
+      "primary_domain": "Human Resources",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_operations_manager",
+      "career_name": "Operations Manager",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_operations_analyst",
+      "career_name": "Operations Analyst",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [
+        "Data & Analytics"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_supply_chain_analyst",
+      "career_name": "Supply Chain Analyst",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_supply_chain_manager",
+      "career_name": "Supply Chain Manager",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_logistics_analyst",
+      "career_name": "Logistics Analyst",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_logistics_manager",
+      "career_name": "Logistics Manager",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_procurement_specialist",
+      "career_name": "Procurement Specialist",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_inventory_analyst",
+      "career_name": "Inventory Analyst",
+      "primary_domain": "Operations & Supply Chain",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_mechanical_engineer",
+      "career_name": "Mechanical Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_electrical_engineer",
+      "career_name": "Electrical Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_electronics_engineer",
+      "career_name": "Electronics Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_civil_engineer",
+      "career_name": "Civil Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_chemical_engineer",
+      "career_name": "Chemical Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_industrial_engineer",
+      "career_name": "Industrial Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_manufacturing_engineer",
+      "career_name": "Manufacturing Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_automotive_engineer",
+      "career_name": "Automotive Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_mechatronics_engineer",
+      "career_name": "Mechatronics Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_aerospace_engineer",
+      "career_name": "Aerospace Engineer",
+      "primary_domain": "Engineering",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_healthcare_analyst",
+      "career_name": "Healthcare Analyst",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_health_informatics_specialist",
+      "career_name": "Health Informatics Specialist",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_clinical_data_analyst",
+      "career_name": "Clinical Data Analyst",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [
+        "Data & Analytics"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_clinical_research_associate",
+      "career_name": "Clinical Research Associate",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_biomedical_engineer",
+      "career_name": "Biomedical Engineer",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_biotechnologist",
+      "career_name": "Biotechnologist",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_bioinformatics_analyst",
+      "career_name": "Bioinformatics Analyst",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [
+        "Data & Analytics"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_medical_laboratory_scientist",
+      "career_name": "Medical Laboratory Scientist",
+      "primary_domain": "Healthcare & Life Sciences",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_research_scientist",
+      "career_name": "Research Scientist",
+      "primary_domain": "Research & Academia",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": true,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_research_assistant",
+      "career_name": "Research Assistant",
+      "primary_domain": "Research & Academia",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_research_analyst",
+      "career_name": "Research Analyst",
+      "primary_domain": "Research & Academia",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_academic_researcher",
+      "career_name": "Academic Researcher",
+      "primary_domain": "Research & Academia",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_lecturer",
+      "career_name": "Lecturer",
+      "primary_domain": "Research & Academia",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_assistant_professor",
+      "career_name": "Assistant Professor",
+      "primary_domain": "Research & Academia",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_laboratory_researcher",
+      "career_name": "Laboratory Researcher",
+      "primary_domain": "Research & Academia",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_content_writer",
+      "career_name": "Content Writer",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_copywriter",
+      "career_name": "Copywriter",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_technical_writer",
+      "career_name": "Technical Writer",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_content_strategist",
+      "career_name": "Content Strategist",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_graphic_designer",
+      "career_name": "Graphic Designer",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_video_editor",
+      "career_name": "Video Editor",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_animator",
+      "career_name": "Animator",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_public_relations_specialist",
+      "career_name": "Public Relations Specialist",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [
+        "PR Specialist"
+      ],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_communications_specialist",
+      "career_name": "Communications Specialist",
+      "primary_domain": "Media, Content & Communication",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_teacher",
+      "career_name": "Teacher",
+      "primary_domain": "Education & Training",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_computer_science_teacher",
+      "career_name": "Computer Science Teacher",
+      "primary_domain": "Education & Training",
+      "secondary_domains": [
+        "Software Development"
+      ],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_corporate_trainer",
+      "career_name": "Corporate Trainer",
+      "primary_domain": "Education & Training",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_technical_trainer",
+      "career_name": "Technical Trainer",
+      "primary_domain": "Education & Training",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_instructional_designer",
+      "career_name": "Instructional Designer",
+      "primary_domain": "Education & Training",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_curriculum_developer",
+      "career_name": "Curriculum Developer",
+      "primary_domain": "Education & Training",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    },
+    {
+      "career_id": "cl_education_consultant",
+      "career_name": "Education Consultant",
+      "primary_domain": "Education & Training",
+      "secondary_domains": [],
+      "aliases": [],
+      "legacy_careerlens_role": false,
+      "status": "active"
+    }
+  ]
+}

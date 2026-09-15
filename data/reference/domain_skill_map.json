@@ -1,0 +1,1008 @@
+{
+  "schema_version": "1.0.0",
+  "name": "CareerLens V2 Domain Skill Map",
+  "weight_scale": {
+    "1.0": "core domain signal",
+    "0.7": "important domain signal",
+    "0.4": "secondary domain signal",
+    "0.2": "weak/supporting domain signal"
+  },
+  "notes": [
+    "Used for domain candidate generation, not final career scoring.",
+    "Soft skills are intentionally excluded from domain detection v1.",
+    "A skill may contribute to multiple domains with different weights.",
+    "Skill aliases are normalized before domain scoring."
+  ],
+  "aliases": {
+    "powerbi": "power bi",
+    "ms excel": "excel",
+    "microsoft excel": "excel",
+    "ml": "machine learning",
+    "ai": "artificial intelligence",
+    "nlp": "natural language processing",
+    "k8s": "kubernetes",
+    "sklearn": "scikit-learn",
+    "scikit learn": "scikit-learn",
+    "amazon web services": "aws",
+    "microsoft azure": "azure",
+    "google cloud platform": "gcp",
+    "js": "javascript",
+    "ts": "typescript",
+    "nodejs": "node.js",
+    "reactjs": "react",
+    "react.js": "react",
+    "dotnet": ".net",
+    "c sharp": "c#",
+    "cpp": "c++",
+    "search engine optimization": "seo",
+    "search engine marketing": "sem",
+    "user experience": "ux design",
+    "user interface": "ui design"
+  },
+  "skills": {
+    "academic research": {
+      "Research & Academia": 1.0
+    },
+    "academic writing": {
+      "Research & Academia": 0.7
+    },
+    "account management": {
+      "Sales & Customer Success": 1.0
+    },
+    "accounting": {
+      "Finance & Accounting": 1.0
+    },
+    "active directory": {
+      "Networking & IT Infrastructure": 0.4
+    },
+    "adobe premiere pro": {
+      "Media, Content & Communication": 0.7
+    },
+    "adobe xd": {
+      "UI/UX & Product Design": 0.4
+    },
+    "after effects": {
+      "Media, Content & Communication": 0.4
+    },
+    "agile": {
+      "Software Development": 0.4,
+      "Product & Project Management": 1.0
+    },
+    "airflow": {
+      "Database & Data Engineering": 0.7
+    },
+    "algorithms": {
+      "Software Development": 0.7
+    },
+    "aml": {
+      "Banking & FinTech": 0.4
+    },
+    "android": {
+      "Mobile Development": 1.0
+    },
+    "angular": {
+      "Web Development": 0.7
+    },
+    "animation": {
+      "Media, Content & Communication": 0.4
+    },
+    "ansible": {
+      "DevOps & Platform Engineering": 0.7
+    },
+    "assessment design": {
+      "Education & Training": 0.4
+    },
+    "auditing": {
+      "Finance & Accounting": 1.0
+    },
+    "autocad": {
+      "Engineering": 0.7
+    },
+    "aws": {
+      "Cloud Computing": 1.0,
+      "DevOps & Platform Engineering": 0.4
+    },
+    "azure": {
+      "Cloud Computing": 1.0,
+      "DevOps & Platform Engineering": 0.4
+    },
+    "backend development": {
+      "Web Development": 0.7
+    },
+    "banking": {
+      "Banking & FinTech": 1.0
+    },
+    "bash": {
+      "DevOps & Platform Engineering": 0.4,
+      "Networking & IT Infrastructure": 0.4
+    },
+    "bioinformatics": {
+      "Healthcare & Life Sciences": 1.0
+    },
+    "biostatistics": {
+      "Healthcare & Life Sciences": 0.7
+    },
+    "biotechnology": {
+      "Healthcare & Life Sciences": 1.0
+    },
+    "blockchain": {
+      "Banking & FinTech": 0.4
+    },
+    "bookkeeping": {
+      "Finance & Accounting": 1.0
+    },
+    "bootstrap": {
+      "Web Development": 0.4
+    },
+    "brand management": {
+      "Marketing & Advertising": 0.7
+    },
+    "budgeting": {
+      "Finance & Accounting": 0.7
+    },
+    "business analysis": {
+      "Product & Project Management": 0.4,
+      "Business & Consulting": 1.0
+    },
+    "business development": {
+      "Sales & Customer Success": 1.0
+    },
+    "business intelligence": {
+      "Data & Analytics": 1.0
+    },
+    "business process modeling": {
+      "Business & Consulting": 0.7
+    },
+    "c#": {
+      "Software Development": 1.0
+    },
+    "c++": {
+      "Software Development": 1.0
+    },
+    "cad": {
+      "Engineering": 0.7
+    },
+    "chemical engineering": {
+      "Engineering": 1.0
+    },
+    "ci/cd": {
+      "DevOps & Platform Engineering": 1.0
+    },
+    "cisco": {
+      "Networking & IT Infrastructure": 0.7
+    },
+    "civil engineering": {
+      "Engineering": 1.0
+    },
+    "clinical data management": {
+      "Healthcare & Life Sciences": 0.7
+    },
+    "clinical research": {
+      "Healthcare & Life Sciences": 1.0
+    },
+    "cloud architecture": {
+      "Cloud Computing": 1.0
+    },
+    "cloud computing": {
+      "Cloud Computing": 1.0,
+      "Networking & IT Infrastructure": 0.4
+    },
+    "cloud security": {
+      "Cloud Computing": 0.7
+    },
+    "communications": {
+      "Media, Content & Communication": 0.7
+    },
+    "compensation and benefits": {
+      "Human Resources": 0.4
+    },
+    "compliance": {
+      "Banking & FinTech": 0.7
+    },
+    "computer vision": {
+      "AI & Machine Learning": 1.0
+    },
+    "content development": {
+      "Education & Training": 0.4
+    },
+    "content marketing": {
+      "Marketing & Advertising": 1.0
+    },
+    "content strategy": {
+      "Media, Content & Communication": 0.7
+    },
+    "content writing": {
+      "Media, Content & Communication": 1.0
+    },
+    "copywriting": {
+      "Marketing & Advertising": 0.4,
+      "Media, Content & Communication": 1.0
+    },
+    "credit analysis": {
+      "Banking & FinTech": 1.0
+    },
+    "crm": {
+      "Marketing & Advertising": 0.4,
+      "Sales & Customer Success": 0.7
+    },
+    "cryptography": {
+      "Cybersecurity": 0.4
+    },
+    "css": {
+      "Web Development": 1.0
+    },
+    "curriculum development": {
+      "Education & Training": 1.0
+    },
+    "customer relationship management": {
+      "Sales & Customer Success": 0.7
+    },
+    "customer success": {
+      "Sales & Customer Success": 1.0
+    },
+    "cybersecurity": {
+      "Cybersecurity": 1.0
+    },
+    "dart": {
+      "Mobile Development": 0.7
+    },
+    "dashboarding": {
+      "Data & Analytics": 0.7
+    },
+    "data analysis": {
+      "Data & Analytics": 1.0,
+      "Research & Academia": 0.7
+    },
+    "data cleaning": {
+      "Data & Analytics": 0.7
+    },
+    "data engineering": {
+      "Database & Data Engineering": 1.0
+    },
+    "data modeling": {
+      "Data & Analytics": 0.7,
+      "Database & Data Engineering": 0.7
+    },
+    "data storytelling": {
+      "Data & Analytics": 0.4
+    },
+    "data structures": {
+      "Software Development": 0.7
+    },
+    "data visualization": {
+      "Data & Analytics": 1.0
+    },
+    "data warehousing": {
+      "Database & Data Engineering": 1.0
+    },
+    "database administration": {
+      "Database & Data Engineering": 1.0
+    },
+    "databricks": {
+      "Database & Data Engineering": 0.4
+    },
+    "debugging": {
+      "Software Development": 0.4
+    },
+    "deep learning": {
+      "AI & Machine Learning": 1.0
+    },
+    "demand forecasting": {
+      "Operations & Supply Chain": 0.7
+    },
+    "design patterns": {
+      "Software Development": 0.7
+    },
+    "design systems": {
+      "UI/UX & Product Design": 0.7
+    },
+    "devops": {
+      "DevOps & Platform Engineering": 1.0
+    },
+    "dhcp": {
+      "Networking & IT Infrastructure": 0.7
+    },
+    "digital forensics": {
+      "Cybersecurity": 0.7
+    },
+    "digital marketing": {
+      "Marketing & Advertising": 1.0
+    },
+    "dns": {
+      "Networking & IT Infrastructure": 0.7
+    },
+    "docker": {
+      "Cloud Computing": 0.7,
+      "DevOps & Platform Engineering": 1.0
+    },
+    "e-learning": {
+      "Education & Training": 0.7
+    },
+    "education": {
+      "Education & Training": 1.0
+    },
+    "educational technology": {
+      "Education & Training": 0.7
+    },
+    "electrical engineering": {
+      "Engineering": 1.0
+    },
+    "electronics engineering": {
+      "Engineering": 1.0
+    },
+    "email marketing": {
+      "Marketing & Advertising": 0.7
+    },
+    "embedded systems": {
+      "Engineering": 0.4
+    },
+    "employee relations": {
+      "Human Resources": 0.7
+    },
+    "erp": {
+      "Finance & Accounting": 0.4,
+      "Operations & Supply Chain": 0.7
+    },
+    "ethical hacking": {
+      "Cybersecurity": 0.7
+    },
+    "etl": {
+      "Data & Analytics": 0.4,
+      "Database & Data Engineering": 1.0
+    },
+    "excel": {
+      "Data & Analytics": 1.0,
+      "Business & Consulting": 0.7,
+      "Finance & Accounting": 0.7,
+      "Human Resources": 0.4,
+      "Operations & Supply Chain": 0.4
+    },
+    "experimental design": {
+      "Research & Academia": 0.7
+    },
+    "figma": {
+      "UI/UX & Product Design": 1.0
+    },
+    "financial analysis": {
+      "Business & Consulting": 0.4,
+      "Finance & Accounting": 1.0,
+      "Banking & FinTech": 0.7
+    },
+    "financial modeling": {
+      "Finance & Accounting": 0.7,
+      "Banking & FinTech": 0.7
+    },
+    "financial reporting": {
+      "Finance & Accounting": 1.0
+    },
+    "financial services": {
+      "Banking & FinTech": 1.0
+    },
+    "fintech": {
+      "Banking & FinTech": 1.0
+    },
+    "firebase": {
+      "Mobile Development": 0.4
+    },
+    "firewalls": {
+      "Cybersecurity": 0.4,
+      "Networking & IT Infrastructure": 0.4
+    },
+    "flutter": {
+      "Mobile Development": 1.0
+    },
+    "forecasting": {
+      "Finance & Accounting": 0.7
+    },
+    "fraud detection": {
+      "Banking & FinTech": 0.7
+    },
+    "frontend development": {
+      "Web Development": 0.7
+    },
+    "gcp": {
+      "Cloud Computing": 1.0,
+      "DevOps & Platform Engineering": 0.4
+    },
+    "generative ai": {
+      "AI & Machine Learning": 0.4
+    },
+    "genomics": {
+      "Healthcare & Life Sciences": 0.7
+    },
+    "git": {
+      "Software Development": 0.7,
+      "Mobile Development": 0.4,
+      "DevOps & Platform Engineering": 0.7
+    },
+    "google ads": {
+      "Marketing & Advertising": 0.7
+    },
+    "google analytics": {
+      "Data & Analytics": 0.4,
+      "Marketing & Advertising": 0.7
+    },
+    "grafana": {
+      "DevOps & Platform Engineering": 0.4
+    },
+    "graphic design": {
+      "Media, Content & Communication": 1.0
+    },
+    "hadoop": {
+      "Database & Data Engineering": 0.7
+    },
+    "health informatics": {
+      "Healthcare & Life Sciences": 1.0
+    },
+    "healthcare": {
+      "Healthcare & Life Sciences": 1.0
+    },
+    "hr analytics": {
+      "Human Resources": 0.7
+    },
+    "hr management": {
+      "Human Resources": 1.0
+    },
+    "hris": {
+      "Human Resources": 0.4
+    },
+    "html": {
+      "Web Development": 1.0
+    },
+    "human resources": {
+      "Human Resources": 1.0
+    },
+    "iam": {
+      "Cloud Computing": 0.4,
+      "Cybersecurity": 0.7
+    },
+    "illustrator": {
+      "UI/UX & Product Design": 0.4,
+      "Media, Content & Communication": 0.7
+    },
+    "incident response": {
+      "Cybersecurity": 1.0
+    },
+    "information security": {
+      "Cybersecurity": 1.0
+    },
+    "infrastructure as code": {
+      "DevOps & Platform Engineering": 0.7
+    },
+    "instructional design": {
+      "Education & Training": 1.0
+    },
+    "interaction design": {
+      "UI/UX & Product Design": 0.7
+    },
+    "inventory management": {
+      "Operations & Supply Chain": 0.7
+    },
+    "investment banking": {
+      "Banking & FinTech": 1.0
+    },
+    "ios": {
+      "Mobile Development": 1.0
+    },
+    "java": {
+      "Software Development": 1.0,
+      "Web Development": 0.4,
+      "Mobile Development": 0.7
+    },
+    "javascript": {
+      "Software Development": 0.4,
+      "Web Development": 1.0,
+      "Mobile Development": 0.4
+    },
+    "jenkins": {
+      "DevOps & Platform Engineering": 0.7
+    },
+    "jira": {
+      "Product & Project Management": 0.7
+    },
+    "kafka": {
+      "Database & Data Engineering": 0.4
+    },
+    "kanban": {
+      "Product & Project Management": 0.4
+    },
+    "kotlin": {
+      "Mobile Development": 0.7
+    },
+    "kubernetes": {
+      "Cloud Computing": 0.7,
+      "DevOps & Platform Engineering": 1.0
+    },
+    "kyc": {
+      "Banking & FinTech": 0.4
+    },
+    "laboratory research": {
+      "Research & Academia": 0.4
+    },
+    "laboratory techniques": {
+      "Healthcare & Life Sciences": 0.7
+    },
+    "large language models": {
+      "AI & Machine Learning": 0.4
+    },
+    "lead generation": {
+      "Sales & Customer Success": 0.7
+    },
+    "lean": {
+      "Operations & Supply Chain": 0.4
+    },
+    "learning and development": {
+      "Human Resources": 0.7
+    },
+    "learning management systems": {
+      "Education & Training": 0.7
+    },
+    "lesson planning": {
+      "Education & Training": 0.7
+    },
+    "linux": {
+      "Software Development": 0.4,
+      "Cloud Computing": 0.7,
+      "DevOps & Platform Engineering": 0.7,
+      "Cybersecurity": 0.4,
+      "Networking & IT Infrastructure": 0.7
+    },
+    "literature review": {
+      "Research & Academia": 0.7
+    },
+    "logistics": {
+      "Operations & Supply Chain": 1.0
+    },
+    "machine learning": {
+      "AI & Machine Learning": 1.0
+    },
+    "management consulting": {
+      "Business & Consulting": 1.0
+    },
+    "manufacturing": {
+      "Engineering": 0.7
+    },
+    "market research": {
+      "Business & Consulting": 0.7,
+      "Marketing & Advertising": 0.4,
+      "Sales & Customer Success": 0.4
+    },
+    "marketing analytics": {
+      "Marketing & Advertising": 0.7
+    },
+    "mathematics": {
+      "AI & Machine Learning": 0.7
+    },
+    "matlab": {
+      "Engineering": 0.7,
+      "Research & Academia": 0.4
+    },
+    "mechanical engineering": {
+      "Engineering": 1.0
+    },
+    "mechatronics": {
+      "Engineering": 0.4
+    },
+    "medical data analysis": {
+      "Healthcare & Life Sciences": 0.7
+    },
+    "medical terminology": {
+      "Healthcare & Life Sciences": 0.4
+    },
+    "meta ads": {
+      "Marketing & Advertising": 0.4
+    },
+    "mlops": {
+      "AI & Machine Learning": 0.7
+    },
+    "mobile development": {
+      "Mobile Development": 1.0
+    },
+    "mobile ui": {
+      "Mobile Development": 0.7
+    },
+    "mongodb": {
+      "Database & Data Engineering": 0.4
+    },
+    "moodle": {
+      "Education & Training": 0.4
+    },
+    "mysql": {
+      "Database & Data Engineering": 0.4
+    },
+    "natural language processing": {
+      "AI & Machine Learning": 1.0
+    },
+    "negotiation": {
+      "Sales & Customer Success": 0.4
+    },
+    "network administration": {
+      "Networking & IT Infrastructure": 1.0
+    },
+    "network security": {
+      "Cybersecurity": 1.0
+    },
+    "networking": {
+      "Cloud Computing": 0.4,
+      "Networking & IT Infrastructure": 1.0
+    },
+    "neural networks": {
+      "AI & Machine Learning": 0.7
+    },
+    "next.js": {
+      "Web Development": 0.4
+    },
+    "node.js": {
+      "Web Development": 0.7
+    },
+    "nosql": {
+      "Database & Data Engineering": 0.7
+    },
+    "numpy": {
+      "Data & Analytics": 0.7
+    },
+    "object-oriented programming": {
+      "Software Development": 1.0
+    },
+    "opencv": {
+      "AI & Machine Learning": 0.4
+    },
+    "operations analysis": {
+      "Operations & Supply Chain": 0.7
+    },
+    "operations management": {
+      "Operations & Supply Chain": 1.0
+    },
+    "pandas": {
+      "Data & Analytics": 0.7
+    },
+    "payments": {
+      "Banking & FinTech": 0.4
+    },
+    "payroll": {
+      "Human Resources": 0.4
+    },
+    "penetration testing": {
+      "Cybersecurity": 1.0
+    },
+    "performance management": {
+      "Human Resources": 0.7
+    },
+    "photoshop": {
+      "UI/UX & Product Design": 0.4,
+      "Media, Content & Communication": 0.7
+    },
+    "php": {
+      "Web Development": 0.7
+    },
+    "plc": {
+      "Engineering": 0.4
+    },
+    "postgresql": {
+      "Database & Data Engineering": 0.4
+    },
+    "power bi": {
+      "Data & Analytics": 1.0,
+      "Business & Consulting": 0.4,
+      "Operations & Supply Chain": 0.4
+    },
+    "powershell": {
+      "Networking & IT Infrastructure": 0.4
+    },
+    "predictive analytics": {
+      "Data & Analytics": 0.4
+    },
+    "process improvement": {
+      "Business & Consulting": 1.0
+    },
+    "process mapping": {
+      "Business & Consulting": 0.4
+    },
+    "procurement": {
+      "Operations & Supply Chain": 1.0
+    },
+    "product analytics": {
+      "Product & Project Management": 0.4
+    },
+    "product knowledge": {
+      "Sales & Customer Success": 0.4
+    },
+    "product management": {
+      "Product & Project Management": 1.0
+    },
+    "product strategy": {
+      "Product & Project Management": 0.7
+    },
+    "project management": {
+      "Product & Project Management": 1.0,
+      "Business & Consulting": 0.4
+    },
+    "prometheus": {
+      "DevOps & Platform Engineering": 0.4
+    },
+    "prototyping": {
+      "UI/UX & Product Design": 0.7
+    },
+    "public relations": {
+      "Media, Content & Communication": 1.0
+    },
+    "publication": {
+      "Research & Academia": 0.4
+    },
+    "python": {
+      "Data & Analytics": 0.7,
+      "AI & Machine Learning": 0.7,
+      "Software Development": 1.0,
+      "Web Development": 0.4,
+      "Cloud Computing": 0.4,
+      "Cybersecurity": 0.4,
+      "Database & Data Engineering": 0.7,
+      "Banking & FinTech": 0.4,
+      "Healthcare & Life Sciences": 0.4,
+      "Research & Academia": 0.4
+    },
+    "pytorch": {
+      "AI & Machine Learning": 1.0
+    },
+    "quality control": {
+      "Engineering": 0.4
+    },
+    "quickbooks": {
+      "Finance & Accounting": 0.4
+    },
+    "r": {
+      "Data & Analytics": 0.4,
+      "AI & Machine Learning": 0.4,
+      "Healthcare & Life Sciences": 0.4,
+      "Research & Academia": 0.4
+    },
+    "react": {
+      "Web Development": 1.0
+    },
+    "react native": {
+      "Mobile Development": 1.0
+    },
+    "recruitment": {
+      "Human Resources": 1.0
+    },
+    "regulatory affairs": {
+      "Healthcare & Life Sciences": 0.4
+    },
+    "reinforcement learning": {
+      "AI & Machine Learning": 0.4
+    },
+    "requirements gathering": {
+      "Product & Project Management": 0.7,
+      "Business & Consulting": 0.7
+    },
+    "research": {
+      "Research & Academia": 1.0
+    },
+    "research methodology": {
+      "Research & Academia": 1.0
+    },
+    "rest api": {
+      "Software Development": 0.7,
+      "Web Development": 0.4,
+      "Mobile Development": 0.4
+    },
+    "risk management": {
+      "Product & Project Management": 0.4,
+      "Finance & Accounting": 0.4,
+      "Banking & FinTech": 0.7
+    },
+    "roadmapping": {
+      "Product & Project Management": 0.7
+    },
+    "routing": {
+      "Networking & IT Infrastructure": 1.0
+    },
+    "sales": {
+      "Sales & Customer Success": 1.0
+    },
+    "sales analytics": {
+      "Sales & Customer Success": 0.4
+    },
+    "sales strategy": {
+      "Sales & Customer Success": 0.7
+    },
+    "salesforce": {
+      "Sales & Customer Success": 0.7
+    },
+    "sap": {
+      "Finance & Accounting": 0.4,
+      "Operations & Supply Chain": 0.7
+    },
+    "sass": {
+      "Web Development": 0.4
+    },
+    "scientific research": {
+      "Research & Academia": 1.0
+    },
+    "scikit-learn": {
+      "AI & Machine Learning": 0.7
+    },
+    "scrum": {
+      "Product & Project Management": 1.0
+    },
+    "security operations": {
+      "Cybersecurity": 0.7
+    },
+    "sem": {
+      "Marketing & Advertising": 1.0
+    },
+    "seo": {
+      "Marketing & Advertising": 1.0,
+      "Media, Content & Communication": 0.4
+    },
+    "serverless": {
+      "Cloud Computing": 0.4
+    },
+    "siem": {
+      "Cybersecurity": 0.7
+    },
+    "simulation": {
+      "Engineering": 0.4
+    },
+    "site reliability engineering": {
+      "DevOps & Platform Engineering": 0.7
+    },
+    "six sigma": {
+      "Operations & Supply Chain": 0.4
+    },
+    "snowflake": {
+      "Database & Data Engineering": 0.4
+    },
+    "social media": {
+      "Media, Content & Communication": 0.4
+    },
+    "social media marketing": {
+      "Marketing & Advertising": 1.0
+    },
+    "software engineering": {
+      "Software Development": 1.0
+    },
+    "solidworks": {
+      "Engineering": 0.7
+    },
+    "spark": {
+      "Database & Data Engineering": 0.7
+    },
+    "splunk": {
+      "Cybersecurity": 0.4
+    },
+    "spring boot": {
+      "Software Development": 0.4
+    },
+    "sql": {
+      "Data & Analytics": 1.0,
+      "Database & Data Engineering": 1.0,
+      "Business & Consulting": 0.4,
+      "Banking & FinTech": 0.4,
+      "Healthcare & Life Sciences": 0.4
+    },
+    "stakeholder management": {
+      "Product & Project Management": 0.7,
+      "Business & Consulting": 0.7
+    },
+    "statistical analysis": {
+      "Research & Academia": 0.7
+    },
+    "statistics": {
+      "Data & Analytics": 0.7,
+      "AI & Machine Learning": 0.7
+    },
+    "strategy": {
+      "Business & Consulting": 1.0
+    },
+    "supply chain management": {
+      "Operations & Supply Chain": 1.0
+    },
+    "swift": {
+      "Mobile Development": 0.7
+    },
+    "system administration": {
+      "Networking & IT Infrastructure": 1.0
+    },
+    "tableau": {
+      "Data & Analytics": 1.0
+    },
+    "talent acquisition": {
+      "Human Resources": 1.0
+    },
+    "taxation": {
+      "Finance & Accounting": 0.7
+    },
+    "tcp/ip": {
+      "Networking & IT Infrastructure": 1.0
+    },
+    "teaching": {
+      "Education & Training": 1.0
+    },
+    "technical training": {
+      "Education & Training": 0.4
+    },
+    "technical writing": {
+      "Media, Content & Communication": 0.4
+    },
+    "tensorflow": {
+      "AI & Machine Learning": 1.0
+    },
+    "terraform": {
+      "Cloud Computing": 0.7,
+      "DevOps & Platform Engineering": 1.0
+    },
+    "training": {
+      "Education & Training": 0.7
+    },
+    "transformers": {
+      "AI & Machine Learning": 0.4
+    },
+    "typescript": {
+      "Software Development": 0.4,
+      "Web Development": 0.7
+    },
+    "ui design": {
+      "UI/UX & Product Design": 1.0
+    },
+    "unit testing": {
+      "Software Development": 0.7
+    },
+    "usability testing": {
+      "UI/UX & Product Design": 0.4
+    },
+    "user experience": {
+      "UI/UX & Product Design": 1.0
+    },
+    "user interface": {
+      "UI/UX & Product Design": 1.0
+    },
+    "user stories": {
+      "Product & Project Management": 0.4
+    },
+    "ux design": {
+      "UI/UX & Product Design": 1.0
+    },
+    "ux research": {
+      "UI/UX & Product Design": 0.7
+    },
+    "valuation": {
+      "Finance & Accounting": 0.4
+    },
+    "video editing": {
+      "Media, Content & Communication": 1.0
+    },
+    "virtualization": {
+      "Cloud Computing": 0.4,
+      "Networking & IT Infrastructure": 0.7
+    },
+    "visual design": {
+      "UI/UX & Product Design": 0.4
+    },
+    "vulnerability assessment": {
+      "Cybersecurity": 0.7
+    },
+    "warehouse management": {
+      "Operations & Supply Chain": 0.4
+    },
+    "wazuh": {
+      "Cybersecurity": 0.4
+    },
+    "web development": {
+      "Web Development": 1.0
+    },
+    "windows server": {
+      "Networking & IT Infrastructure": 0.7
+    },
+    "wireframing": {
+      "UI/UX & Product Design": 0.7
+    },
+    "wordpress": {
+      "Web Development": 0.4,
+      "Marketing & Advertising": 0.4
+    },
+    "workday": {
+      "Human Resources": 0.4
+    }
+  }
+}

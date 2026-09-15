@@ -1,0 +1,178 @@
+# ============================================================
+# CareerLens AI
+# GitHub publication exclusions
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Python environments
+# ------------------------------------------------------------
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ------------------------------------------------------------
+# Python caches / compiled files
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+
+# ------------------------------------------------------------
+# Jupyter local artifacts
+# ------------------------------------------------------------
+
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
+# IDE / editor local settings
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+*.code-workspace
+
+
+# ------------------------------------------------------------
+# Operating-system artifacts
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ------------------------------------------------------------
+# Environment variables / credentials / secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+credentials.json
+secrets.json
+
+
+# ------------------------------------------------------------
+# Logs / temporary files
+# ------------------------------------------------------------
+
+*.log
+*.tmp
+*.temp
+*.bak
+~$*
+
+
+# ============================================================
+# CAREERLENS DEVELOPMENT WORKSPACE
+#
+# Large research/source/intermediate datasets remain local.
+# Required production artifacts are explicitly re-included.
+# ============================================================
+
+
+# ------------------------------------------------------------
+# External ESCO / O*NET research datasets
+# ------------------------------------------------------------
+
+data/external/
+
+
+# ------------------------------------------------------------
+# Processed development artifacts
+#
+# Ignore the processed workspace, then explicitly retain the
+# production market dataset used by CareerLens.
+# ------------------------------------------------------------
+
+data/processed/*
+
+!data/processed/core_job_market_data.csv
+
+
+# ------------------------------------------------------------
+# Raw datasets
+#
+# Ignore raw workspace except the small market dataset
+# referenced by the active V2 runtime.
+# ------------------------------------------------------------
+
+data/raw/*
+
+!data/raw/ai_job_market_insights.csv
+
+
+# ------------------------------------------------------------
+# Reference workspace
+#
+# Ignore reference directory by default and explicitly publish
+# only frozen/runtime/reference artifacts required by V2.
+# ------------------------------------------------------------
+
+data/reference/*
+
+!data/reference/career_profiles_v2.json
+!data/reference/career_profiles_v2_manifest.json
+!data/reference/career_taxonomy.json
+!data/reference/domain_skill_map.json
+!data/reference/readiness_policy_v2.json
+!data/reference/recommendation_evidence_policy_v2.json
+!data/reference/role_skill_profiles.json
+!data/reference/routing_policy_v2.json
+!data/reference/runtime_skill_aliases_v2.json
+
+
+# ------------------------------------------------------------
+# Model workspace
+#
+# Publish only the model referenced by active V2 growth logic.
+# ------------------------------------------------------------
+
+models/*
+
+!models/career_lens_job_growth_random_forest.joblib
+
+
+# ------------------------------------------------------------
+# Development notebook
+#
+# The current notebook contains the complete research/build
+# history and large embedded outputs. Keep it local for now.
+# ------------------------------------------------------------
+
+notebooks/*.ipynb
+
+
+# ------------------------------------------------------------
+# Streamlit development backups
+#
+# Active app/main.py remains publishable.
+# ------------------------------------------------------------
+
+app/*backup*.py
+app/*checkpoint*.py
+app/*pre_*.py
+
+
+# ------------------------------------------------------------
+# Miscellaneous local backup conventions
+# ------------------------------------------------------------
+
+*.old
+*.orig

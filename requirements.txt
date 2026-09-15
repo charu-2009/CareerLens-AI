@@ -1,0 +1,10 @@
+# CareerLens AI — direct runtime dependencies
+# Validated with Python 3.14.2
+# Generated from production-source dependency audit.
+# Transitive dependencies are resolved automatically by pip.
+
+altair==6.2.2
+joblib==1.5.3
+numpy==2.5.2
+pandas==3.0.5
+streamlit==1.62.0

@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0",
+  "policy_name": "CareerLens V2 Recommendation Evidence Architecture",
+  "final_ranking_model": "lane_based_readiness_ordering",
+  "universal_weighted_score": false,
+  "authorized_numeric_ordering_signals": [
+    "readiness_score"
+  ],
+  "recommendation_lanes": {
+    "full_readiness": {
+      "runtime_mode": "full_readiness_candidate",
+      "readiness_available": true,
+      "readiness_ordering_allowed": true,
+      "cross_lane_numeric_comparison": false,
+      "presentation_role": "main_comparable"
+    },
+    "limited_readiness": {
+      "runtime_mode": "limited_readiness_candidate",
+      "readiness_available": true,
+      "readiness_ordering_allowed": true,
+      "cross_lane_numeric_comparison": false,
+      "presentation_role": "qualified_comparable"
+    },
+    "routing_only": {
+      "runtime_mode": "routing_only_evidence",
+      "readiness_available": false,
+      "readiness_ordering_allowed": false,
+      "cross_lane_numeric_comparison": false,
+      "presentation_role": "related_evidence_incomplete"
+    },
+    "safe_shell": {
+      "runtime_mode": "safe_shell_no_evidence",
+      "readiness_available": false,
+      "readiness_ordering_allowed": false,
+      "cross_lane_numeric_comparison": false,
+      "presentation_role": "discovery_only"
+    }
+  },
+  "signal_roles": {
+    "domain_routing": {
+      "semantic_role": "candidate_generation",
+      "coverage_scope": "taxonomy-wide when user skills provide evidence",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "readiness_score": {
+      "semantic_role": "career_fit",
+      "coverage_scope": "84 readiness-enabled careers",
+      "final_ranking_authorized": true,
+      "display_authorized": true
+    },
+    "readiness_confidence": {
+      "semantic_role": "evidence_qualification",
+      "coverage_scope": "84 readiness-enabled careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "skill_gap": {
+      "semantic_role": "explanation_and_learning",
+      "coverage_scope": "84 readiness-enabled careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "market_demand": {
+      "semantic_role": "market_context",
+      "coverage_scope": "20 original market-supported careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "salary": {
+      "semantic_role": "market_context",
+      "coverage_scope": "20 original market-supported careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "experience": {
+      "semantic_role": "descriptive_market_context",
+      "coverage_scope": "20 original market-supported careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "education": {
+      "semantic_role": "descriptive_market_context",
+      "coverage_scope": "20 original market-supported careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "remote": {
+      "semantic_role": "preference_context",
+      "coverage_scope": "20 original market-supported careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "location": {
+      "semantic_role": "preference_context",
+      "coverage_scope": "20 original market-supported careers",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    },
+    "growth": {
+      "semantic_role": "experimental_market_context",
+      "coverage_scope": "20 original careers mapped to only 4 source titles",
+      "final_ranking_authorized": false,
+      "display_authorized": true
+    }
+  },
+  "rules": [
+    {
+      "rule_id": "R1",
+      "rule": "Routing score must never be used as final career recommendation score."
+    },
+    {
+      "rule_id": "R2",
+      "rule": "Missing readiness must remain unavailable and must never become zero."
+    },
+    {
+      "rule_id": "R3",
+      "rule": "Full and limited readiness must remain separate evidence lanes."
+    },
+    {
+      "rule_id": "R4",
+      "rule": "Limited readiness receives an evidence label, not an arbitrary numeric penalty."
+    },
+    {
+      "rule_id": "R5",
+      "rule": "Routing-only and safe-shell careers must not receive fabricated readiness scores."
+    },
+    {
+      "rule_id": "R6",
+      "rule": "Market demand is descriptive context and not a universal ranking weight."
+    },
+    {
+      "rule_id": "R7",
+      "rule": "Salary must never be interpreted as career fit."
+    },
+    {
+      "rule_id": "R8",
+      "rule": "Observed experience evidence does not authorize a universal experience-fit score."
+    },
+    {
+      "rule_id": "R9",
+      "rule": "Observed education evidence does not authorize fabricated degree eligibility rules."
+    },
+    {
+      "rule_id": "R10",
+      "rule": "Remote work and location are preference/context signals rather than intrinsic career-quality weights."
+    },
+    {
+      "rule_id": "R11",
+      "rule": "Experimental growth must not participate in V2 recommendation ranking."
+    },
+    {
+      "rule_id": "R12",
+      "rule": "Unsupported signals must remain unavailable rather than being imputed or treated as zero."
+    },
+    {
+      "rule_id": "R13",
+      "rule": "Readiness score may order careers only inside readiness-comparable lanes."
+    },
+    {
+      "rule_id": "R14",
+      "rule": "Skill gaps explain readiness and learning needs but do not create a separate ranking score."
+    },
+    {
+      "rule_id": "R15",
+      "rule": "No universal weighted recommendation formula is authorized."
+    }
+  ],
+  "legacy_v1_formula_v2_status": "not_authorized"
+}

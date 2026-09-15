@@ -1,0 +1,58 @@
+{
+  "schema_version": "2.0-readiness-policy",
+  "policy_name": "CareerLens V2 Weighted Readiness Policy",
+  "status": "frozen_runtime_policy",
+  "scoring_method": "weighted_requirement_coverage",
+  "weights": {
+    "core": 1.8,
+    "important": 1.0
+  },
+  "formula": "((matched_core * 1.8) + (matched_important * 1.0)) / ((total_core * 1.8) + (total_important * 1.0)) * 100",
+  "rules": {
+    "readiness_enabled_modes": [
+      "full_readiness_candidate",
+      "limited_readiness_candidate"
+    ],
+    "routing_only_returns_score": false,
+    "safe_shell_returns_score": false,
+    "unknown_career_returns_score": false,
+    "zero_requirement_profile_returns_score": false,
+    "score_range": [
+      0.0,
+      100.0
+    ],
+    "score_rounding_decimals": 2,
+    "confidence_separate_from_score": true,
+    "limited_mode_score_penalty": false,
+    "limited_mode_requires_warning": true
+  },
+  "confidence_policy": {
+    "full_readiness_candidate": {
+      "label": "full",
+      "message": "Readiness is calculated from the available full readiness profile."
+    },
+    "limited_readiness_candidate": {
+      "label": "limited",
+      "message": "Readiness is calculated from a limited-evidence profile and should be interpreted with caution."
+    },
+    "routing_only_evidence": {
+      "label": "routing_only",
+      "message": "This career can be used for routing and discovery, but does not currently have sufficient evidence for a readiness percentage."
+    },
+    "safe_shell_no_evidence": {
+      "label": "unavailable",
+      "message": "No evidence-backed readiness profile is currently available for this career."
+    }
+  },
+  "calibration": {
+    "selected_core_to_important_ratio": 1.8,
+    "important_baseline": 1.0,
+    "basis": [
+      "Phase 11F.1 readiness tier distribution audit",
+      "Phase 11F.2 per-requirement ratio simulation",
+      "Phase 11F.3 V1-anchored calibration",
+      "Phase 11F.3A corrected marginal-priority validation"
+    ],
+    "reason": "1.8 is the lowest tested refined ratio that removed negative core-heavy versus important-heavy mirror cases across the 20 trusted V1 profiles while avoiding the stronger dominance introduced by 2.0."
+  }
+}
