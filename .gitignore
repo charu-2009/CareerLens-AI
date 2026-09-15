@@ -128,6 +128,7 @@ data/raw/*
 data/reference/*
 
 !data/reference/career_profiles_v2.json
+!data/reference/career_profiles_v2.sha256
 !data/reference/career_profiles_v2_manifest.json
 !data/reference/career_taxonomy.json
 !data/reference/domain_skill_map.json
