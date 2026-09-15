@@ -139,32 +139,19 @@ CareerLens uses domain detection as a **routing mechanism**, not as a career pro
 CareerLens AI currently organizes its career taxonomy into the following 24 domains:
 
 | # | Career Domain | # | Career Domain |
-
 |---|---|---|---|
-
-| 1 | AI \& Machine Learning | 13 | Human Resources |
-
-| 2 | Banking \& FinTech | 14 | Marketing \& Advertising |
-
-| 3 | Business \& Consulting | 15 | Media, Content \& Communication |
-
+| 1 | AI & Machine Learning | 13 | Human Resources |
+| 2 | Banking & FinTech | 14 | Marketing & Advertising |
+| 3 | Business & Consulting | 15 | Media, Content & Communication |
 | 4 | Cloud Computing | 16 | Mobile Development |
-
-| 5 | Cybersecurity | 17 | Networking \& IT Infrastructure |
-
-| 6 | Data \& Analytics | 18 | Operations \& Supply Chain |
-
-| 7 | Database \& Data Engineering | 19 | Product \& Project Management |
-
-| 8 | DevOps \& Platform Engineering | 20 | Research \& Academia |
-
-| 9 | Education \& Training | 21 | Sales \& Customer Success |
-
+| 5 | Cybersecurity | 17 | Networking & IT Infrastructure |
+| 6 | Data & Analytics | 18 | Operations & Supply Chain |
+| 7 | Database & Data Engineering | 19 | Product & Project Management |
+| 8 | DevOps & Platform Engineering | 20 | Research & Academia |
+| 9 | Education & Training | 21 | Sales & Customer Success |
 | 10 | Engineering | 22 | Software Development |
-
-| 11 | Finance \& Accounting | 23 | UI/UX \& Product Design |
-
-| 12 | Healthcare \& Life Sciences | 24 | Web Development |
+| 11 | Finance & Accounting | 23 | UI/UX & Product Design |
+| 12 | Healthcare & Life Sciences | 24 | Web Development |
 
 ---
 
@@ -175,17 +162,11 @@ Not every career in CareerLens has the same amount or quality of supporting evid
 The career profiles currently consist of:
 
 | Profile Type | Careers | Purpose |
-
 |---|---:|---|
-
 | Full readiness | 58 | Stronger validated career-specific readiness assessment |
-
 | Limited readiness | 26 | Readiness assessment with more limited supporting evidence |
-
 | Routing only | 107 | Career discovery without a numeric readiness score |
-
 | Safe shell | 10 | Discovery-only careers where evidence is insufficient |
-
 | **Total** | **201** | |
 
 This means **84 careers currently support readiness assessment**, while the remaining careers are handled conservatively through routing or discovery rather than fabricated readiness scores.
